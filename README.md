@@ -6,7 +6,7 @@ This repo contains the code for the this blog.
 * Basic knowledge of [Pytorch 0.3.1](http://pytorch.org/)
 * Understanding of GRU/LSTM [4]
 
-## What is covered in the [notebook]("Sentiment analysis pytorch.ipynb")
+## What is covered in the [notebook]("Sentiment%20analysis%20pytorch.ipynb")
 
 1. Load Data
 2. Simple Data Analysis
