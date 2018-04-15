@@ -1,6 +1,6 @@
 # Sentiment Analysis with Variable Length sequences in pytorch
 
-This repo contains the code for the this blog.  
+This repo contains the code for the this [blog](https://medium.com/@sonicboom8/sentiment-analysis-with-variable-length-sequences-in-pytorch-6241635ae130).  
 Our final aim is to build a simple GRU model with concat pooling [5]. For this post I will use Twitter Sentiment Analysis [1] dataset as this is a much easier dataset compared to the competition. Download dataset from [2]
 
 > This post focuses on how to implement sequence classification with variable lengths in pure pytorch.
