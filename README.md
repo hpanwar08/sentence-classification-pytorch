@@ -6,6 +6,7 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
 > This post focuses on how to implement sequence classification with variable lengths in pure pytorch.
 
 ## Prerequisites
+* Python 3.6
 * Basic knowledge of [Pytorch 0.3.1](http://pytorch.org/)
 * Understanding of GRU/LSTM [4]
 
