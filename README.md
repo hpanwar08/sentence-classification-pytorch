@@ -6,6 +6,7 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
 > This post focuses on how to implement sequence classification with variable lengths in pure pytorch.
 
 ## Prerequisites
+
 * Python 3.6
 * Basic knowledge of [Pytorch 0.3.1](http://pytorch.org/)
 * Understanding of GRU/LSTM [4]
@@ -18,26 +19,30 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
 4. Unpadded dataset and dataloader
 5. Padded dataset and dataloader
 6. Simple GRU model
-6. GRU model with concat pooling
-7. Max Pooling and Average Pooling
-8. Train
+7. GRU model with concat pooling
+8. Max Pooling and Average Pooling
+9. Train
 
 ## Data Overview
 
 ![Top 5 rows of dataset](data/imgs/dfhead.png "Top 5 rows of dataset")
 
 ## Output from GRU and hidden state
+
 ![GRU output](data/imgs/last_out.jpg "GRU output")
 
 ## Concat Pooling model architecture [5]
+
 ![GRU model with concat pooling](data/imgs/Slide2.JPG "GRU model with concat pooling")
 
 ## ToDo
-- [ ] Add function to make train/validation split
+
+- [x] Add function to make train/validation split
 - [ ] Use pretrained embedding
 - [ ] Use bidirectional GRU
 
 ## References
+
 [1] http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/  
 [2] http://thinknook.com/wp-content/uploads/2012/09/Sentiment-Analysis-Dataset.zip  
 [3] https://stackoverflow.com/questions/46387661/how-to-correctly-implement-a-batch-input-lstm-network-in-pytorch  
