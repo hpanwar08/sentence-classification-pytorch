@@ -5,7 +5,30 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
 
 > This post focuses on how to implement sequence classification with variable lengths in pure pytorch.
 
+## UPDATE - START - May 2019
+
+> Added pytorch 1.0 compatible notebook. It uses pytorch 1.1 and ignite training functions. Also better use of pytorch Dataset and Dataloader. Code is more compact and easy to understand.
+
+## What is covered in [Notebook Pytorch 1.0](Sentiment%20analysis%20pytorch%201.0.ipynb)
+
+* Process Data through pytorch Dataset  
+  * Tokenize tweets  
+  * Build vocabulary  
+  * Vectorize tweets  
+* Make batches through pytorch Dataloader  
+  * Pad tweets to the max length in the batch
+* Max Pooling and Average Pooling
+  * RNN model (GRU) with concat pooling
+* [Ignite](https://pytorch.org/ignite/) training callbacks
+  * Define ignite training loops
+  * Add callback for epoch loss and accuracy
+  * Add callback for ModelCheckpoint
+  * Add callback for EarlyStopping
+
+## UPDATE - END
+
 ## Prerequisites
+
 * Python 3.6
 * Basic knowledge of [Pytorch 0.3.1](http://pytorch.org/)
 * Understanding of GRU/LSTM [4]
@@ -18,26 +41,30 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
 4. Unpadded dataset and dataloader
 5. Padded dataset and dataloader
 6. Simple GRU model
-6. GRU model with concat pooling
-7. Max Pooling and Average Pooling
-8. Train
+7. GRU model with concat pooling
+8. Max Pooling and Average Pooling
+9. Train
 
 ## Data Overview
 
 ![Top 5 rows of dataset](data/imgs/dfhead.png "Top 5 rows of dataset")
 
 ## Output from GRU and hidden state
+
 ![GRU output](data/imgs/last_out.jpg "GRU output")
 
 ## Concat Pooling model architecture [5]
+
 ![GRU model with concat pooling](data/imgs/Slide2.JPG "GRU model with concat pooling")
 
 ## ToDo
-- [ ] Add function to make train/validation split
+
+- [x] Add function to make train/validation split
 - [ ] Use pretrained embedding
 - [ ] Use bidirectional GRU
 
 ## References
+
 [1] http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/  
 [2] http://thinknook.com/wp-content/uploads/2012/09/Sentiment-Analysis-Dataset.zip  
 [3] https://stackoverflow.com/questions/46387661/how-to-correctly-implement-a-batch-input-lstm-network-in-pytorch  
