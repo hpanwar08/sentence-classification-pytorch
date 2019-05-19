@@ -5,6 +5,28 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
 
 > This post focuses on how to implement sequence classification with variable lengths in pure pytorch.
 
+## UPDATE - START - May 2019
+
+> Added pytorch 1.0 compatible notebook. It uses pytorch 1.1 and ignite training functions. Also better use of pytorch Dataset and Dataloader. Code is more compact and easy to understand.
+
+## What is covered in [Notebook Pytorch 1.0](Sentiment%20analysis%20pytorch%201.0.ipynb)
+
+* Process Data through pytorch Dataset  
+  * Tokenize tweets  
+  * Build vocabulary  
+  * Vectorize tweets  
+* Make batches through pytorch Dataloader  
+  * Pad tweets to the max length in the batch
+* Max Pooling and Average Pooling
+  * RNN model (GRU) with concat pooling
+* [Ignite](https://pytorch.org/ignite/) training callbacks
+  * Define ignite training loops
+  * Add callback for epoch loss and accuracy
+  * Add callback for ModelCheckpoint
+  * Add callback for EarlyStopping
+
+## UPDATE - END
+
 ## Prerequisites
 
 * Python 3.6
