@@ -25,6 +25,9 @@ Our final aim is to build a simple GRU model with concat pooling [5]. For this p
   * Add callback for ModelCheckpoint
   * Add callback for EarlyStopping
 
+Added a new [repository](https://github.com/hpanwar08/rest-api-ml-model) that contains REST API build in Flask to deploy ML models in production.  
+  * [Flask REST API](https://github.com/hpanwar08/rest-api-ml-model)
+
 ## UPDATE - END
 
 ## Prerequisites
